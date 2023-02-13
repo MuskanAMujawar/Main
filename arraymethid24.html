@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+
+        ///object use (.)  same key show last....replace old ko new se
+
+
+
+        let arr=[{id:1,name:"muskan",city:"kolhapur",age:23},
+                  {id:2,name:"lubana",city:"hyderabad",age:22},
+                  {id:3,name:"saba",city:"up",age:21},
+                   {id:4,name:"zohura",city:"parbhani",age:20},
+                    {id:5,name:"shifa",city:"basmat",age:19},
+                    {id:6,name:"muskan",city:"chikodi",age:20}]
+                let filtdata=arr.map((item,index)=>{
+                    return item.name, item.city
+                })
+                console.log(filtdata)
+                // let filtdata=arr.filter((elem,index)=>elem.age>=19 || elem.name=="muskan")
+                    //  filtdat=arr.filter((elem,index)=>elem.age>=19 && elem.name=="muskan")
+                    //  filtda=arr.filter((elem,index)=>elem.age<=19 || elem.name=="muskan")
+                    //  filtd=arr.filter((elem,index)=>elem.age>=19)
+                    //  filt=arr.filter((elem,index)=>elem.name=="zohura")
+                    //  fil=arr.filter((elem,index)=>elem.name=="muskan"&& elem.city=="chikodi")
+                    //  fi=arr.find((elem,index)=>elem.name=="muskan"&& elem.city=="chikodi") //3con &&||both
+                // console.log(filtdata,filtdat,filtda,filtd,filt,fil,fi)
+        
+                let as=[1,2,3,4,5]
+                let newas=as.map((elem)=>console.log(elem+3))
+
+                let ar=[2,4,5,67,23]
+                let newar=ar.forEach((elem)=>console.log(elem+8))
+
+                let practice=["the","two","examples","above","do","exact","same","there","is","no","need","to","use"]
+                //pop
+                //console.log(practice.pop())_____________use 
+               // practice.pop()_____________full new array without last word
+                //let copy=practice.pop()________________use
+                //console.log(copy)
+
+                //push
+               // practice.push("hey")//____________________add new word in last  show full array
+                //console.log(practice)
+                 //console.log(practice.push())______________________show index
+                 //let copy=practice.push("your")
+                 //console.log(copy)____________________show index
+
+                 //shift
+                 //console.log(practice.shift())  //_____________remove first word & show only this word
+                 //practice.shift()
+                 //console.log(practice)________________show full array without first word
+                 //let copy =practice.shift()
+                 //console.log(copy)_______________remove first word & show only this word
+
+                 //unshift 
+                 //console.log(practice.unshift("why"))//----------------show index
+                 //practice.unshift("how")
+                 //console.log(practice)______________show complete array with new word in first
+                 //let copy=practice.unshift("see")
+                 //console.log(copy)________________show index
+
+                 //slice
+                 //console.log(practice.slice(2,4))___________we give two num then that index numbered words copy in new array first num is index& second is index+1
+                //let copy=practice.slice(3,9)
+                //console.log(copy)____________show index numbered wise word
+                 //practice.slice(4,8)
+                 //console.log(practice)___________does not effect
+
+                //splice
+                //console.log(practice.splice(2,0,"joke"))________does not effect
+                //const copy=practice.splice(2,5)
+                //console.log(copy)
+                //const copyy=practice.splice(3,1)__________no effect
+                //console.log(copyy)
+                // practice.splice(6,2,"hi")
+                //console.log(practice)_____________show new word where we want...1st para start num 2nd num delete 3rd new word ...unlimited new words adds
+
+                //fill
+                // let now=new Array(4)
+                //  now.fill(43)
+                //  console.log(now)//___________new array method same word or number repeat as per choice 
+                //practice.fill("hello")
+                //console.log(practice)____________all previous array replace with new word ...all change
+                //console.log(practice.fill("good"))______same as above
+
+                //find  without array
+                //let copy=practice.find((elem,index)=>elem=="there")----------show word what we want without array
+                //console.log(copy)
+                //console.log(practice.find((elem,index)=>elem=="the"))_________same as above
+                //practice.find((elem,index)=>elem=="example")
+                //console.log(practice)__________no effect
+                //console.log(practice.find((elem,index)=>elem=="bro"))____-word is not find undefined
+                //console.log(practice.find((elem,index)=>elem==="examples"))_______correct
+                //console.log(practice.find((elem,index)=>elem!=="examples"))______false answ....use all comparision logical operator
+
+                //filter 
+                let field=[{name:"zohura", city:"parbhani",spec:"civil",age:20},
+                          {name:"muskan", city:"nanded",spec:"computer",age:21},
+                          {name:"lubna", city:"hyderabad",spec:"chemistry",age:20},
+                          {name:"saba", city:"basmat",spec:"computer",age:20},]
+        
+                    let copy=field.filter((elem,index)=>elem.city=="nanded")
+                    let cop=field.filter((elem,index)=>elem.age>20)
+                    let co=field.filter((elem,index)=>elem.age>=20 && elem.name=="zohura")
+                    console.log(copy,cop,co)
+        
+                zohura=[1,2,3,4,5,6,7,8,9]
+                let copyz=zohura.pop()
+                console.log(copyz)
+                zohura.pop()
+                console.log(zohura)
+                console.log(zohura.pop())
+
+                zohura.push(20)
+                console.log(zohura)
+                let copyx=zohura.push(21)
+                console.log(copyx)
+        
+                zohura.shift()
+                console.log(zohura) //best
+                console.log(zohura.shift())
+                let copyw=zohura.shift()
+                console.log(copyx)
+        
+                zohura.unshift(90)
+                console.log(zohura)
+                console.log(zohura.unshift(30))
+                let copyv=zohura.unshift()
+                console.log(copyv)
+
+                zohura.slice(2,6)
+                console.log(zohura)
+                console.log(zohura.slice(2,4))
+                let copyu=zohura.slice(3,5)
+                console.log(copyu)
+
+                let a=[1,2,3,4,5,6,7,8,9]
+                // a.splice(2,5,"hi")
+                // console.log(a)
+                // console.log(a.splice(2,5))
+                // let aa=a.splice(4,2)
+                // console.log(aa)
+
+                // a.fill(10)
+                // console.log(a)
+
+                let aas= a.filter((ele,index)=>ele==5)
+                 console.log(aas)
+
+                 let asa=a.filter((ele,index)=>ele>=7)
+                 console.log(asa)
+
+                 let b=10
+                 console.log(b)
+                 console.log(b++)
+                 console.log(b++)
+                 console.log(b)
+
+                const w=[1,2,3,4,5]
+                const  e=[6,7,8,9,10]
+                const r=[11,12,13,14,15]
+                const mer=w.concat(e,r)
+                console.log(mer)
+
+                const merr=r.concat(r,r)
+                console.log(merr)
+                //const merge=w.concat(e)
+                //console.log(merge)
+
+                console.log(w.concat(e,r))
+
+                console.log(w.concat("numbers here"))
+
+                let numb=[70,30,10,57,35]
+                let copynum=numb.reduce((acc,cur)=>acc+cur)
+                console.log(copynum)
+
+                const numm="7030105735"
+                const str=numm.split("")
+                console.log(str)
+                //const res=str.reduce((acc,cur)=>Number(acc)+Number(cur))
+                //console.log(res)
+
+
+                
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                    var obj={id:1,name:"muskan",city:"kolhapur",age:23}
+         obj2={id:1,name:"muskan",city:"kolhapur",age:23}
+         console.log(obj==obj2)
+
+
+
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let arr=[1,2,3,4,5,6,7,8,9]
+        console.log(arr.pop())
+        console.log(arr.pop())
+        console.log(arr.pop())     //last element remove
+        console.log(arr.pop())
+        console.log(arr)
+
+        let aa=[1,2,3,4,5,"hi"]     
+        console.log(aa.pop())
+        console.log(aa)
+
+        let bb=[1,2,3,4,56,7]
+        bb.push(65789)            //last element add
+        console.log(bb)
+
+        let cc=[1,2,3,4,5,true]
+        console.log(cc.shift())      //first element remove
+        console.log(cc)
+
+        let dd=[567,56,78,789]
+        dd.unshift(2)              //first element add
+        console.log(dd)
+
+        let ee=[1,2,3,4,5,6,7,8,9,10]
+        ee.pop()
+        ee.pop()
+        ee.pop()
+        ee.push(null)
+        console.log(ee)                    //all data type add or remove
+
+        let ff=[1,2,3,4,5,6,7,10]
+        ff.shift()
+        ff.shift()
+        ff.shift()
+        ff.unshift(22)
+        console.log(ff)
+
+        let gg=['hello',true,false,"java",5679]
+        gg.pop()
+        gg.pop()
+        gg.shift()
+        gg.pop()
+        gg.push("java")
+        console.log(gg)
+
+        let hh=["hello",true,false,"java",45678]
+        hh.shift()
+        hh.shift()
+        hh.shift()
+        hh.shift()
+        console.log(hh)
+
+        let i=["hello",true,false,"java",45678]
+        i.shift()
+        i.shift()
+        i.shift()
+        i.shift()
+        console.log(i.pop())
+    
+
+     function number(a) {
+        var arr = [1,2,3,4,5,6];
+        return a
+    
+        console.log(arr.pop(a));
+    }
+    number()
+
+    function yes(a){
+        a.pop()
+        return a
+    }
+    console.log(yes ([1,4,6,7,9,98]))
+
+    // const getarray=(s)=>
+    // s.pop()
+    // return s
+    // console.log(getarray([1,2,3,4,5,6,7]))
+
+
+    let arrw=[]
+for (i=0; i<=10; i++){
+   arrw.push(i)
+}
+console.log(arrw)
+
+let fight=[]
+for (i=0; i<=10; i++){
+   fight.pop(i)
+}
+console.log(fight)
+
+let hight=[]
+for (i=0; i<=10; i++){
+   hight.shift(i)
+}
+console.log(hight)
+
+let might=[]
+for (i=0; i<=10; i++){
+   might.unshift(i)
+}
+console.log(might)
+
+function get(a){
+    let no=[]
+for (let m=0; m<=10;m++)
+no.push(m)
+return get
+}
+console.log(get(10))
+
+function getarray(a){
+    let arr=[]
+    for (let m=1; m<=10; m++){
+        if (m%2==0){
+            arr.push(m)
+        }
+    }
+ return arr
+}
+ console.log(getarray(10))
+
+ function geta(c,d){
+    let ff=[]
+    for (let e=1; e<=c; e++){
+        if (e%2==d){
+            ff.unshift(e)
+        }
+    }
+ return ff
+}
+ console.log(geta(20,1))
+
+
+//  function hi(a){
+//     let are=[]
+//  for(let d=1; d<=10; d++){
+//    are.push(d)
+//    console.log(d*2)
+//             }
+//         }
+//         console.log(are(d))
+
+// let table=[]
+// for (let g=1; g<=10; g++){
+//     table.push(g)
+// }
+// console.log(table("g*2",g,"=",g*3))
+
+const num1 = 4;
+const multiples = (num1) => {
+   const res = [];
+   for(let i = 1; i <= num1; i ++){
+      res.push(i);
+   };
+   return res;
+};
+console.log(multiples(num1))
+
+
+function tabel(a){
+    let yes=[]
+    for (let j=1; j<=10; j++){
+        
+            yes.push(j*a)
+    }
+    return yes
+}
+console.log(tabel(2))
+
+function rest(s){
+    let dr=[]
+    for (let e=0; e<=10;e++){
+    dr.push(e*s)
+    }
+    return dr
+}
+console.log(rest(10))
+
+//slice return new array , original values doesnot change,copy limit  first num index second para length
+
+let art=[1,2,3,4,5,6,7,8,9]
+console.log(art.slice(3,7))
+ 
+let fruit=["mango","bnnana","orange","apple","kiwi"]
+console.log(fruit.slice(1,4))
+console.log(fruit.slice(4))
+console.log(fruit.slice)
+console.log(fruit.slice(3))
+
+let color=["red","black","blue","yellow","white"]
+let copyarray=color.slice(1,4)
+copyarray.push("pink","hello",5678)         //copy array
+copyarray.unshift("green")
+console.log(copyarray)                                          //after console , instruction not allow
+
+
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
+

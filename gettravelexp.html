@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const gettravel=()=>{
+            var kam=document.getElementById('km').value
+            var cam=document.getElementById("cm").value
+            var fap=document.getElementById('fp').value
+            var totalexp=kam/cam*fap
+            document.getElementById("answer").innerHTML=totalexp
+            //   console.log(kam)
+            //  console.log(cam)
+            //   console.log(fap)
+        }
+
+        
+        const getpercentage=()=>{
+            const chemi=document.getElementById("chem").value
+            const physi=document.getElementById("phy").value
+            const bota=document.getElementById("bot").value
+            const zool=document.getElementById("zoo").value
+            const bioc=document.getElementById("bio").value
+            const totall=chemi/physi*bota
+            document.getElementById("percent").innerHTML=totall
+        }
+
+        const getadd=()=>{
+            const sci=document.getElementById("sc").value
+            const mat=document.getElementById("ma").value
+            const en=document.getElementById("eng").value
+            const addd=Number(sci)+Number(mat)+Number(en)
+            document.getElementById("add").innerHTML=addd
+        }
+
+
+        // const getaddi=()=>{
+        //     let num=getElementById("num").value
+        //     let ber=getElementById("ber").value
+        //     let additi=()=>Number(num)+Number(ber)
+        //     document.getElementById("answerr").innerHTML=additi()
+        // }
+    </script>
+</head>
+
+<body>
+    <div>
+        <label for="">please enter km:</label>
+        <input type="number" id="km"><br><br>
+        <label for="">please enter car milege:</label>
+        <input type="number" id="cm"><br><br>
+        <label for="">please enter fuel price:</label>
+        <input type="number" id="fp"><br><br>
+        <button onclick="gettravel()">submit</button>
+        <h1 id="answer"></h1>
+
+    </div>
+
+
+    <div>
+        <label for="">please enter here chemistry marks</label>
+        <input type="number" id="chem"><br><br>
+        <label for="">please enter here physics marks</label>
+        <input type="number" id="phy"><br><br>
+        <label for="">please enter here botany marks</label>
+        <input type="number" id="bot"><br><br>
+        <label for="">please enter here zoology marks</label>
+        <input type="number" id="zoo"><br><br>
+        <label for="">please enter here biochemistry marks</label>
+        <input type="number" id="bio">
+        <button onmouseenter="getpercentage()">total</button>
+        <h1 id="percent"></h1>
+
+
+        <h1> calculator</h1>
+        <label for="">science</label>
+        <input type="number" id="sc" ><br>
+        <label>maths</label>
+        <input type="number" id="ma"><br>
+        <label>english</label>
+        <input type="number" id="eng">
+        <button onclick="getadd()">addition</button>
+        <h1 id="add"></h1>
+
+
+        <h1>prototype calculator</h1>
+        <input type="number" id="num"><br>
+        <input type="number" id="ber"><br>
+        <button onclick="addi()">addition</button>
+        <button onclick="sub()">substraction</button>
+        <button onclick="multi()">multiplication</button>
+        <button onclick="div()">division</button>
+        <h1 id="answerr"></h1>
+    </div>
+</body>
+</html>

@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var a=2
+        var b=4
+        console.log(a+b)
+
+         var a=2
+        var b=4
+        console.log(b-a)
+
+        var a=2
+        var b="6"
+        console.log(a+b)
+
+        var a=3
+        var b=6
+        console.log(a*b)
+
+        var a=5
+        var b=10
+        console.log(b/a)
+
+        var a=2
+        var b=4
+        console.log(b%a)
+
+        var a=20
+        console.log(++a)
+
+        var b=7
+        console.log(--b)
+
+        var a=2
+        var b=2
+        console.log(b==a)
+
+        var a=5
+        var a=9
+        console.log(a==b)
+
+        var a=4
+        var c="4"
+        console.log(a==c)
+
+        var v=6
+        var u="6"
+        console.log(v==u)
+
+        var u=6
+        var v=9
+        console.log(null==undefined)
+
+        var u=6
+        var v=9
+        console.log(null===undefined)
+
+        var u=6
+        var v=9
+        console.log(null!==undefined)
+
+        var u=6
+        var v=9
+        console.log(null!=undefined)
+
+
+        var s=6
+        var s=6
+        console.log(s===s)
+
+        var r=7
+        var y=5
+        console.log(r===y)
+
+        var u=7
+        var u=6
+        console.log(u===u)
+
+        var a=4
+        var f=5
+        console.log(a!=f)
+
+        var h=6
+        var j=6
+        console.log(h!=j)
+
+        var t=7
+        var d=7
+        console.log(t!=d)
+
+        var s=8
+        var s=8
+        console.log(s!==s)
+
+        var y=9
+        var t=6
+        console.log(y!==t)
+
+        var g=8
+        var f=5
+        console.log(f>g)
+
+        var f=56
+        var r=34
+        console.log(r<f)
+
+        var n=2
+        var t=5
+        var h=7
+        console.log(n<t<h)
+
+         var a=5
+        var b=4
+        var c="2"
+        console.log(a>b>c)
+
+        var a=9
+        var b="9"
+        console.log(a>=b)
+
+        var a=2
+        var b=10
+        console.log(b+=a)
+
+        const sum=()=>10+10
+        console.log(sum())          //arrow
+
+        function add(){
+            return 60+10                //vanilla
+        }
+        console.log(add())
+
+        function multi(){
+            a=90
+           b= 65
+            c=20
+            d=89
+            return a+b                //vanilla
+        }
+        
+        const multiply=()=>
+         a=10
+         b=20
+         c=30
+          10*20
+        console.log(multiply())
+
+        let divide=()=>10/10
+        console.log(divide())
+
+        var modulous=()=>2%2
+        console.log(modulous())
+
+        function multi(){
+            var a=1
+            b=9
+            return(a*b)
+        }
+        console.log(multi())
+
+        const multipl=()=>10*30
+        console.log(multipl())
+
+        const mult=(a,b)=>(a*b)
+        console.log(mult(10,10))
+
+        const value=(x,y)=>{
+        let multiii=(x*y)
+        let divide=(x/y)
+            return multiii
+        }
+        console.log(value(20,20))
+
+        let hi=(x,y)=>{
+        let multiii=(x*y)
+        let divide=(x/y)
+            return multiii
+        }
+        console.log(hi(20,20))
+
+
+        let aa=20
+        if (aa==20) {
+            console.log("correct")
+        } else {
+          console.log(wrong)  
+        }
+
+        
+        var time=48
+            if (time <12 ) {
+                console.log("morning")
+            } else if(time < 16){
+                console.log("afternoon")
+            } else if(time <20){
+                console.log("evening")
+            } else if(time < 24){
+                console.log("night")
+            }else {
+                console.log("invalid input")
+            
+        }
+
+
+        let aaa=21
+        if (aaa==20) {
+            console.log("correct")
+        } else {
+          console.log("wrong")  
+        }
+
+        let aaaa=4
+        if(aaaa==4){
+            console.log("yes")
+        }
+
+       
+
+        function calculator (value){
+            if (value<=50) {
+                document.write(50*value)
+            } else {
+                document.write(20+Number(value))
+            }
+        }
+        calculator(prompt("enter"))
+
+        console.log(23+Number("40")-20)
+
+        let calc=(ss)=>{
+            if (ss<=60) {
+                document.write(2*ss)
+            } else {
+                document.write(2/ss)
+            }
+        }
+            calc(prompt("here"))
+
+
+        let greater=(number)=>{
+            if (number>6) {
+                document.write("greater_than")
+
+            }else if(number <6){
+                document.write("less_than")
+            } else {
+                document.write("nothing")
+            }
+        }
+        greater(prompt("please_enter_here"))
+
+            // var muskan=(n)=>{
+            //     if (n>5) {
+            //         console.log(5*n)
+            //     } else (n<5){
+            //         console.log(5+n)
+            //     }
+            // }   
+            // muskan (prompt("you"))
+
+
+            const user=["abc","nanded",456789,"you"]
+                console.log(user.length)
+
+
+const use=["abc","nanded",456789,"you",5467,45678,234567]
+for(let i=0; i<use.length;i++){
+    delete use [1]
+    console.log(use[i])            // use[i]  use.length        loop imp most array
+    document.write(use[i],"<br/>")       //use br tag linebreak
+
+}
+
+ console.log(2==2&&4==6)
+ console.log(2==2&&4==4)
+ console.log(2==2||4==6)
+ console.log(2==2||4==4)
+ console.log(2==2||4==6)
+ console.log(2==3||4==8)
+
+function parameter(a,b){
+ if (a>=10 && b<=50) {
+    console.log(a*b)
+ } else {
+    console.log(a+b)
+}
+}
+    parameter(4,30)
+ 
+ let para=(c,d)=>{
+    if (c>=20&&d<=100) {
+        console.log(c+d)
+    } else {
+        console.log(c-d)
+    }
+ }
+console.log( para (25,78))
+
+let avc=(yes,of)
+if (jk>=10&&of<=20) {
+    console.log(jk+of)
+} else {
+    console.log(jk-of)
+}
+console.log(avc(30,25))
+</script>
+
+
+</head>
+<body>
+    
+</body>
+</html>0

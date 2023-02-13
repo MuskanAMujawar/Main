@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let add=[1,2,3,4,5,34,233,23,42,13] 
+        //let value=0
+       // let copyad=add.forEach((ele)=>{
+           // return ele      map must
+            //return ele    no return in for each
+
+            //value /=ele
+            //value*=ele
+           // console.log(value)
+
+       // })
+        //console.log(value)
+
+        let value=0
+        let copy=add.map((elem)=>{
+            return value+=elem
+
+        })
+        console.log(value)
+        console.log(copy)    
+        console.log(add)   
+        
+        let arr=[
+            {name:"iphone",quantity:3,price:120000},
+            {name:"one",quantity:6,price:50000},
+            {name:"samsung",quantity:8,price:10000},
+            {name:"realme",quantity:10,price:5000},
+            {name:"mi",quantity:15,price:70000},
+        ]
+        let vl=0
+        let copyarr=arr.forEach((ele)=>{
+            vl+=ele.price
+        })
+        
+        console.log(vl)
+
+        let arrr=[
+            {name:"iphone",quantity:3,price:120000},
+            {name:"one",quantity:6,price:50000},
+            {name:"samsung",quantity:8,price:10000},
+            {name:"realme",quantity:10,price:5000},
+            {name:"mi",quantity:15,price:70000},
+        ]
+        let val=0
+            arrr.map((elem)=>{
+            return val+=elem.price
+        })
+        console.log(val)
+
+        let arrrr=[
+            {name:"iphone",quantity:3,price:120000},
+            {name:"one",quantity:6,price:50000},
+            {name:"samsung",quantity:8,price:10000},
+            {name:"realme",quantity:10,price:5000},
+            {name:"mi",quantity:15,price:70000},
+        ]
+        let total=0
+            arrrr.forEach((elem)=>{
+            total+=elem.quantity*elem.price
+        })
+        console.log(total)
+
+        let amaze=[
+            {name:"iphone",quantity:3,price:120000},
+            {name:"one",quantity:6,price:50000},
+            {name:"samsung",quantity:8,price:10000},
+            {name:"realme",quantity:10,price:5000},
+            {name:"mi",quantity:15,price:70000},
+        ]
+    
+        let copyamaze=amaze.reduce((acc,cur)=>{
+           return  acc +cur.quantity*cur.price
+        },0)
+        console.log(copyamaze)
+
+        let r=[
+            {name:"iphone",quantity:3,price:120000},
+            {name:"one",quantity:6,price:50000},
+            {name:"samsung",quantity:8,price:10000},
+            {name:"realme",quantity:10,price:5000},
+            {name:"mi",quantity:15,price:70000},
+        ]
+        let l=0
+         let no=r.forEach((elem)=>{
+            total+=elem.quantity*elem.price
+        })
+        console.log(no)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

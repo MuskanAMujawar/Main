@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        // var a=10
+        // console.log(typeof(a))
+
+        // var a=("10")
+        // console.log(typeof(a))
+
+        // var b=true
+        // console.log(typeof(b))
+
+        // var c="a"  a
+        // console.log(typeof(c))
+
+        // var d=
+        // console.log(typeof(d))  //undefiend
+
+        // var e=null
+        // console.log(typeof(e)) //object
+
+        // var a=60
+        // var a=40
+        // console.log(a)  //redeclare show second value
+
+        // var a=89
+        // a=76
+        // console.log(a) //reassign show second value
+
+        // let a=43
+        // let a=65
+        // console.log(a)  //no redeclare
+
+        // let a="jkhu"
+        // a="hguy"
+        // a="muskan"
+        // console.log(a)   //reassign show latest value
+
+        // var b=10
+        // var c="10"
+        // console.log(b==c)
+
+        // var b=10
+        // var c="10"
+        // console.log(b===c)    
+
+        // var b=10
+        // var c="20"
+        // console.log(b===c)
+
+        // var b=10
+        // var b="10"
+        // console.log(b===c)
+
+        // var d=10
+        // var e="10"
+        // console.log(d != e)
+
+        // var d=10
+        // var e="10"
+        // console.log(d !== e)
+
+        // var d=10
+        // var e=10
+        // console.log(d<= e)
+
+        var d=10
+         var e=12
+         console.log(d >e)
+
+         var d=20
+         var e=10
+         d+=e
+         console.log(d)
+
+         var d=60
+        var e=10
+         d-=e
+         console.log(d)
+
+        var d=11
+        var e=10
+        d%=e
+        console.log(d)
+
+        var d=10
+        var e=10
+        d%=e
+        console.log(d)
+
+        var d=2
+        var e=2
+        d*=e
+        console.log(d)
+
+        var d=2
+        var e=10
+        d**=e
+        console.log(d)
+
+        var d=2
+        var e=3
+        d**=e
+        console.log(d)
+
+        var d=12
+        var e=2
+        d**=e
+        console.log(d)
+
+        var day = "sunday"
+        if (day == "sunday") {
+            console.log("today is sunday")
+        } else {
+        console.log("today is not sunday")    
+        }
+
+        let gtlt=79
+        if(gtlt<=100){
+            console.log("correct")
+        }else {
+            console.log("wrong")
+        }
+
+        let mod=38
+        if(mod%=0){
+            console.log("even")
+        }else (mod%=1)
+        {
+            console.log("odd")
+        }
+
+
+
+
+        var day=("monday")
+        if (day=="sunday") {
+            console.log("today is sunday")
+        } else {
+          console.log("today is not sunday")  
+        }
+    
+
+
+        function showDay (day){
+            if (day == "monday") {
+                console.log("todays monday")
+            } else {
+                console.log("today is not monday")
+            }
+        }
+        showDay("monday")
+
+        function count (a){
+            if (a>=100) {
+                console.log("correct")
+            } else {
+                console.log("wrong")
+            }
+        }
+        count(650)
+
+        function showDay (day){
+            if (day == "monday") {
+                console.log("todays monday")
+            } else {
+                console.log("today is not monday")
+            }
+        }
+        showDay("sunday")
+
+
+        function showDay (day){
+            if (day=="monday") {
+                console.log("todays monday")
+            } else if(day=="tuesday"){
+            console.log("today is tuesday")
+         } else {
+                console.log("today is not monday")
+            }
+        }
+        showDay("monday")
+
+
+        function showDay (day){
+            if (day=="monday") {
+                console.log("todays monday")
+            } else if(day=="tuesday"){
+            console.log("today is tuesday")
+            } else if(day=="wednesday"){
+            console.log("today is wednesday")
+        } else if(day=="thursday"){
+            console.log("today is thursday")
+        } else if(day=="friday"){
+            console.log("today is friday")
+        } else if(day=="saturday"){
+            console.log("today is saturday")
+        }  else {
+                console.log("today is sunday")
+        }
+        }
+        showDay("wedNesday")
+
+        function timing (time){
+            if (time <12 ) {
+                console.log("morning")
+            } else if(time < 16){
+                console.log("afternoon")
+            } else if(time <20){
+                console.log("evening")
+            } else if(time < 24){
+                console.log("night")
+            }else {
+                console.log("invalid input")
+            }
+            console.log(time)
+        }
+       
+        timing (48)
+
+        function level (standard){
+            if (standard ==0) {
+                console.log("you are in kg")
+              }  else if (standard <0){
+             console.log("please enter positive value")
+                
+            } else if (standard <= 7) {
+                console.log("you are primary")
+            } else if (standard <= 10) {
+                console.log("you are in highschool")
+             } else if (standard <=12){
+                console.log("you are junior")
+            } else if (standard <= 15){
+                console.log("you are undergraduate")
+            } else if (standard <=17){
+                console.log("you are postgraduate")
+            } else if (standard <= 20){
+                console.log("you are docterate")
+            }else{
+                console.log("illiterate")
+            }     
+            }
+            level (-1)
+
+
+            const school=(std)=>{
+                if(std<=10){
+                    console.log("i am in school")
+                }else if (std <=15){
+                    console.log("i am graduate")
+                }else if (std<=17){
+                    console.log("i am post graduate")
+                }else {
+                    console.log("illiteral")
+                }
+            }
+            school(17)
+
+            function multiply (a,b){
+
+                if (isNaN(a)==isNaN(b)) {
+                    console.log(a*b)
+                } else {
+                    console.log("please enter number")
+                }
+            }
+            multiply("10",110)
+                //isnan same console
+                //isnan same console
+                //return a*b
+    
+            var d=1
+            var m=2
+            console.log(d+m)
+
+var d=10
+var r="90"
+console.log(d-r)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

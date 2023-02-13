@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let red=[1,2,3,4,5,6,7,8,9]
+        console.log(red.reduce((acc,cur)=>acc+cur))
+
+        let black=[2,3,4,5,6]
+       let result=black.reduce(function(acc,cur){
+        return acc + cur
+       })
+       console.log (result)
+
+       let yel=[2,3,4,5,6]
+       let total=yel.reduce(function(acc,cur){
+        return acc*cur
+       })
+       console.log(total)
+
+       let yes=[20,10,30]
+       let yess=yes.reduce(function(acc,cur){
+        return acc-cur
+       })
+       console.log(yess)
+
+       function loo(){
+        let full=[]
+        for (let a=0;a<=10;a++)
+        full.push(a*3)
+        return full.reduce((acc,cur)=>acc+cur)
+       }
+       console.log(loo(10))
+        
+       let a=[2,3,1,4,5,6,7]
+    //    let copya=a.reduce(function(acc,cur){
+    //    return acc+cur
+    //     } )
+    //     console.log(copya)
+
+        // let copya=a.reduce(function(acc,cur){
+        //     return acc*cur
+        // })
+        // console.log(copya)
+
+            // let test=a.reduce(function(a,b){
+            //     return a/b
+            // })
+            // console.log(test)
+
+                // const copy=a.reduce(function(a,b){
+                //     return a-b
+                // })
+                // console.log(copy)
+
+                //    let good= a.reduce(let =(acc,cur)=>{
+                //         return acc+cur
+                //       })
+                //       console.log(good)
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

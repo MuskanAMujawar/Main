@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    //     for( let a=0; a<=10;a++){
+    //         console.log(a*3)
+    //     }
+
+    //     for (let b=0; b<=10; b++)
+    //     console.log("b*",b,"=",b*4)
+
+    //     for (let c=0; c<=20; c++){
+    //         if (c%2==0){
+    //             document.write("even",c)
+    //         }
+    //     }
+
+    //    function parameter (a,b){
+    //     if(a>=10&&b<=40){
+    //         console.log(a*b)
+    //     }else{
+    //         console.log(a+b)
+    //     }
+    //    }
+    //    console.log(parameter(12,20))
+
+    //    function good(a,b){
+    //         if (a>10&&b<30){
+    //             console.log(a+b)
+    //         } else if (a==10||b==20) {
+    //             console.log(a-b)
+    //         } else {
+    //              console.log(a*b)
+    //         }
+    //    }
+    //    console.log(good(10,20))
+
+    //    let str=("muskan")
+    //    for (i=0; i<str.length; i++)
+    //    console.log(str[i])
+
+    //    function show (){
+    //     console.log("muskan")
+    //    }
+    //    function good(){
+    //     console.log("kolhapur")
+    //    }
+    //  function king(){
+    //     alert("hello")
+    //  }
+    //   function zohura(){
+    //     console.warn("muskan_shaikh")
+    //   }
+    //   let aaa=[1,2,3,4,5,6,7,8,9]
+    //   console.log(aaa.pop())
+
+    //   let bbb=[11,12,13,14,15,16,17,18,19,20]
+    //   bbb.pop()
+    //   bbb.pop()
+    //   bbb.pop()
+    //   bbb.pop()
+    //   console.log(bbb)
+
+    //   let ccc=[21,22,23,24,25,26]
+    //   ccc.push(27,28,29,"hello")
+    //   console.log(ccc)
+
+    //   let ddd=[31,32,33,34,35,36,37]
+    //   ddd.shift()
+    //   ddd.shift()
+    //   ddd.shift()
+    //   ddd.shift()
+    //   console.log(ddd)
+
+    //   let eee=[41,42,43,54,44,56]
+    //   eee.unshift(true)
+    //   eee.unshift(null)
+    //   eee.unshift(undefined)
+    //   console.log(eee)
+
+    // //   function number (){
+    // //     var fff=[51,52,53,54,55,56]
+    // //     console.log(fff.pop())
+    // //   }
+    // //   number()
+
+    // let bold=[]
+    // for (let p=1;p<=10;p++){
+    //     bold.unshift(p)
+    // }
+    // console.log(bold)
+
+    // function name (q){
+    //     let sty=[]
+    //     for (let q=1; q<=10;q++){
+    //         sty.push(q)
+    //     }
+    //     return sty
+    // }
+    // console.log(name(10))
+
+    // function dii (s){
+    //     let dea=[]
+    //     for (let s=0;s<=10;s++){
+    //         dea.push(s*2)
+    //     }
+    //     return dea.pop()
+    // }
+    // console.log(dii(10))
+
+
+    let personal=["muskan","zohura","saba","lubana","shifa"]
+    //console.log(personal.slice(1))
+        console.log(personal.slice(2))
+        console.log(personal.slice(1,3))
+        console.log(personal.slice(1,5))
+        console.log(personal.slice(-1))
+
+
+    for (let i=1;i<=10;i++)
+    console.log(i)
+
+    for (u=0;u<=10;u++)
+    console.log("u*",2,"=",u*8)
+
+    let arr=[1,2,3,4,5,6,7,8,9]
+    console.log(arr.pop())
+
+    let wheel=[2,4,6,8,10,12,14]
+    wheel.pop()
+    wheel.pop()
+    wheel.pop()
+    wheel.pop()
+    console.log(wheel)
+
+    let game=[3,6,9,12,15,18]
+    console.log(game.slice(1,4))
+
+    let enjoy=["kolhapur","nanded","parbhani","basmat","ratnagiri"]
+    let copyenjoy=enjoy.slice(1,2)
+    console.log(copyenjoy)
+
+    let sir=["mussadiq","arsalan","hyderabad","matin","rahim","imran"]
+    let copysir=sir.slice(2,3)
+    console.log(copysir)
+
+    let careernext=["nanded","goa","hyderabad","aurangabad","musaddiq sir","imran sir","sohel sir","arsalan sir","matin sir","rahim sir"]
+    console.log(careernext)
+
+    const help=[1,2,3,4,5,6,7,8,9,10,11,12,13,true,"good",null,undefined,"loop","function","else","console","data"]
+    let copyhelp=help.slice(1,7)
+    console.log(help)           //two parameter (start with index,end with index+1)
+    console.log(copyhelp)
+
+    const clear=[1,2,3,4,5,67,7]  
+    let copyclear=clear.slice(2,5)        //as instruction
+    clear.push(23)
+    console.log(clear)
+    console.log(copyclear)
+
+    const key=[2,3,4,5,51,213,12]
+        key.splice(2,4)
+        console.log(key)          //cut  (index num,counting from there upto cut,new add )
+   
+   const lock=[2,3,455,776,35,676]
+   lock.splice(2,0,"hello")     
+   console.log(lock)
+
+//new method-new Array   length
+   
+   const rare=new Array(20)
+    rare.fill(100)
+    console.log(rare)
+
+   let wear=new Array(10)
+   wear.fill(undefined==null)
+   console.log(wear)
+   
+   let here=new Array(10)
+   here.fill(undefined===null)
+   console.log(here)
+   
+   let hear=new Array (2)
+   hear.fill(20+10)
+   console.log(hear)
+   
+   let dear=new Array(1)
+   dear.fill(48*48)
+   console.log(dear)
+
+   let girl=new Array(3)
+   girl.fill(20+30-10)
+   console.log(girl)
+   
+   let series=new Array(10)
+   series.fill("muskan")
+   console.log(series)
+
+   let table=new Array(0)
+    for (let i=0;i<=10;i++)
+    console.log(i*5)
+    table.push(i)
+    
+    const city=["kolhapur","latur","parbhani","kagal","nanded","sangli","satara","hyderbad"]
+    let filtdata=city.filter((elem)=>elem=="parbhani")
+    console.log(filtdata)
+
+    const cit=["kolhapur","latur","parbhani","kagal","nanded","sangli","satara","hyderbad"]
+    let filtdat=city.filter((elem)=>elem=="mumbai")
+    console.log(filtdat)
+
+    const ci=["kolhapur","latur","parbhani","kagal","kagal","nanded","sangli","satara","hyderbad"]
+    let filtda=city.filter((elem)=>elem=="kagal")
+    console.log(filtda)
+
+    const c=["kolhapur","latur","parbhani","kagal","nanded","sangli","satara","hyderbad"]
+    let filtd=city.filter((elem,index)=>index==4)
+    console.log(filtd)
+
+    const d=["kolhapur","latur","parbhani","kagal","nanded","sangli","satara","hyderbad"]
+    let filt=city.filter((elem,index)=>index==9)
+    console.log(filt)
+
+    const e=["kolhapur","latur","parbhani","kagal","nanded","sangli","satara","hyderbad"]
+    let fil=city.filter((index,elem)=>index==4)
+    console.log(filtdat)
+
+    let cityy=["kolhapur","latur","parbhani","kagal","nanded","sangli","satara","hyderbad"]
+     let finddata=cityy.find((elem,index)=>elem=="kolhapur")
+      console.log(finddata)
+
+      let y=["kolhapur","latur","parbhani","kagal","nanded","sangli","satara","hyderbad","kagal"]
+     let finddat=cityy.find((elem,index)=>elem=="kagal")
+      console.log(finddat)
+
+      let yy=["kolhapur","latur","parbhani","kagal","nanded","sangli","satara","hyderbad","kagal"]
+     let findda=cityy.filter((elem,index)=>elem=="kagal")
+      console.log(findda)
+
+     let dist=["nanded","parbhani","aurangabad","nashik","mammad","parbhani","aurangabad"]
+       let copydist=dist.find((elem)=>elem!="nashik")
+       console.log(copydist)
+
+
+      let district=["nanded","parbhani","aurangabad","nashik","mammad","parbhani","aurangabad"]
+     let copydistrict=district.filter((elem,index)=>index!=2)
+     copydistrict=district.filter((elem,index)=>index!=6)
+     console.log(copydistrict)
+
+   let ten=[]
+  for (let a=0;a<=10;a++){
+    ten.push(i*5)
+  }
+ let copyten= ten.filter((elem,index)=>index==5)
+  console.log("=====>",copyten)
+
+  let tenn=new Array()
+  for (let y=0;y<=10;y++){
+    tenn.unshift(y*4)
+  }
+  console.log(tenn.filter((elem,index)=>index==5))
+
+  let night=[]
+  for (let r=0;r<=10;r++){
+    night.push(y*6)
+  }
+  console.log(night.reduce((acc,cur)=>acc+cur))
+
+
+
+
+  let suggest=[123,234,345,456,567,678,889,468,988]
+let total=suggest.reduce((acc,cur)=>acc+cur)
+console.log(total)
+
+let sugges=[123,234,345,456,567,678,889,468,988]
+let tota=suggest.reduce((acc,cur)=>acc*cur)
+console.log(tota)
+
+let sugge=[123,234,345,456,567,678,889,468,988]
+let tot=suggest.reduce((acc,cur)=>acc-cur)
+console.log(tot)
+
+let sugg=[123,234,345,456,567,678,889,468,988]
+let to=suggest.reduce((acc,cur)=>acc%cur)
+console.log(to)
+
+let mod=[2,4,8,12]
+let modul=mod.reduce((acc,cur)=>acc%cur)
+console.log(modul)
+
+let inc=[2,4,8,12]
+let increr=inc.reduce((acc,cur)=>acc*cur)
+console.log(increr)
+
+
+
+
+
+
+
+
+
+
+   </script>
+
+
+</head>
+<body>
+   <button onclick="show()">click here</button> 
+   <button onmouseenter="good()">enter</button> 
+   <button onclick="king()">reset</button>
+   <button onclick="zohura()"></button> 
+</body>
+</html>
